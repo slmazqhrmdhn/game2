@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  #road-background {
+    position: absolute;
+    width: 100%; /* Adjust the width to your image size */
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('bg.jpg'); /* Replace with the path to your road image */
+    background-size: cover;
+    animation: scrollLeft 5s linear infinite;
+  }
+  
+  #road-background-2 {
+      position: absolute;
+      width: 100%; /* Adjust the width to your image size */
+      height: 100%;
+      top: 0;
+      left: 0; 
+      z-index: -1;
+      background-image: url('bg.jpg'); /* Replace with the path to your road image */
+      background-size: cover;
+      animation: scrollLeft2 5s linear infinite;
+    }
+    #road-background-3 {
+      position: absolute;
+      width: 100%; /* Adjust the width to your image size */
+      height: 100%;
+      top: 0;
+      left: 0; 
+      z-index: -1;
+      background-image: url('bg.jpg'); /* Replace with the path to your road image */
+      background-size: cover;
+      animation: scrollLeft3 5s linear infinite;
+    }
+   
+  @keyframes scrollLeft {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+  }    
+  @keyframes scrollLeft2 {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0%); }
+    }    
+    @keyframes scrollLeft3 {
+      from { transform: translateX(200%); }
+      to { transform: translateX(100%); }
+    }
+  
+    .mobil {
+      position: absolute;
+      height: 170px;
+      position: relative;
+      transition: top 0.5s ease;
+  }
